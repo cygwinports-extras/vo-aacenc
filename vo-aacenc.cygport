@@ -1,0 +1,22 @@
+NAME="vo-aacenc"
+VERSION=0.1.2
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="AAC encoder library"
+DESCRIPTION="This library contains an encoder implementation of the Advanced
+Audio Coding (AAC) audio codec. The library is based on a codec implementation
+by VisualOn as part of the Stagefright framework from the Google Android
+project."
+HOMEPAGE="http://sourceforge.net/projects/opencore-amr/"
+SRC_URI="mirror://sourceforge/opencore-amr/${NAME}-${VERSION}.tar.gz"
+
+PKG_NAMES="${NAME} lib${NAME}0 lib${NAME}-devel"
+vo_aacenc_CATEGORY="Audio"
+vo_aacenc_SUMMARY=${SUMMARY/library/utility}
+vo_aacenc_CONTENTS="usr/bin/*.exe usr/share/doc/"
+libvo_aacenc0_CONTENTS="usr/bin/cygvo-aacenc-0.dll"
+libvo_aacenc_devel_CONTENTS="usr/include/ usr/lib/"
+
+CYGCONF_ARGS="--enable-example"
+
+KEEP_LA_FILES="none"

@@ -1,8 +1,0 @@
-category: Audio
-requires: libvo-aacenc0
-external-source: vo-aacenc
-sdesc: "AAC encoder library (development)"
-ldesc: "This library contains an encoder implementation of the Advanced 
-Audio Coding (AAC) audio codec. The library is based on a codec 
-implementation by VisualOn as part of the Stagefright framework from the 
-Google Android project."
